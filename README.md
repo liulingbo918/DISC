@@ -10,18 +10,18 @@ Salient object detection increasingly receives attention as an important compone
 This experiment is based on Convolution Neural Network. To run our code, you need to install the `Caffe` in your computer  (see: [<i>Caffe installation instructions][2].
 We'll call the directory that you cloned our code into `DISC_ROOT`.
 
-1. Download DISC Model
-Download our model from [<i>here][3] and put it into `$DISC_ROOT/DISC_Net/DISC_Model/`.
+Download DISC Model
+>1). Download our model from [<i>here][3] and put it into `$DISC_ROOT/DISC_Net/DISC_Model/`.
 
-2. Compiling
+Compiling
   ```Shell
   cd $DISC_ROOT
   make
   ```
 
-3. Testing
-Put the images(jpg) into `$DISC_ROOT/DISC_Data/DISC_Input/` and the result will be sorted in `$DISC_ROOT/DISC_Data/DISC_Output/`.
-To generate DISC saliency map, run:
+Testing
+>1). Put the images(jpg) into `$DISC_ROOT/DISC_Data/DISC_Input/` and the result will be sorted in `$DISC_ROOT/DISC_Data/DISC_Output/`.
+>2). To generate DISC saliency map, run:
   ```Shell
   cd $DISC_ROOT
   sh DISC/DISC_Script/DISC_test.sh
